@@ -1,0 +1,11 @@
+# Vercel CLI link metadata — not for git
+.vercel/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
