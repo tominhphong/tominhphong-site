@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tô Minh Phong — Realtor Sherman & DFW Texas | Bất động sản Mỹ cho người Việt</title>
-  <meta name="description" content="Realtor tại Sherman & DFW, Texas — phục vụ gia đình Việt mua nhà tại Mỹ, hoặc đầu tư BĐS từ Việt Nam. Chia sẻ kiến thức bằng tiếng Việt + hành trình AI vào nghề." />
+  <title>Phong To — Show My Work: AI agents, AI video, browser automation</title>
+  <meta name="description" content="Phong To (Tô Minh Phong) builds and runs a 24/7 team of AI agents on 4 computers: Vietnamese AI video, automated publishing to 8 platforms, and 42 browser automation skills." />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tominhphong.com/" />
-  <meta property="og:title" content="Tô Minh Phong — Realtor Sherman & DFW Texas" />
-  <meta property="og:description" content="Kiến thức bất động sản Mỹ cho gia đình Việt — mua nhà tại Mỹ hoặc đầu tư từ Việt Nam. Tiếng Việt." />
-  <meta property="og:image" content="https://tominhphong.com/posts/assets/mascot/expression-08-holding-key.png" />
+  <meta property="og:title" content="Phong To — Show My Work (AI)" />
+  <meta property="og:description" content="A 24/7 team of AI agents on 4 computers, Vietnamese AI video, and 42 browser automation skills — built and run by one person." />
+  <meta name="twitter:card" content="summary" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Tô Minh Phong — Realtor Sherman & DFW Texas" />
-  <meta name="twitter:description" content="Kiến thức bất động sản Mỹ cho gia đình Việt — mua nhà tại Mỹ hoặc đầu tư từ Việt Nam." />
-  <meta name="twitter:image" content="https://tominhphong.com/posts/assets/mascot/expression-08-holding-key.png" />
-
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏡</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -43,157 +36,195 @@
       background-clip: text;
       color: transparent;
     }
+    html[data-lang="en"] .lang-vi { display: none; }
+    html[data-lang="vi"] .lang-en { display: none; }
   </style>
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('lang'); } catch (e) {}
+      document.documentElement.setAttribute('data-lang', saved === 'vi' ? 'vi' : 'en');
+    })();
+    function setLang(l) {
+      document.documentElement.setAttribute('data-lang', l);
+      document.documentElement.setAttribute('lang', l);
+      try { localStorage.setItem('lang', l); } catch (e) {}
+    }
+  </script>
 </head>
 <body class="bg-slate-900 text-slate-100 antialiased">
 
+  <!-- ============== LANGUAGE TOGGLE ============== -->
+  <nav class="fixed top-4 right-4 z-50 flex gap-1 rounded-full bg-slate-800/90 border border-slate-700 p-1 text-sm font-mono">
+    <button onclick="setLang('en')" class="px-3 py-1 rounded-full hover:bg-slate-700">EN</button>
+    <button onclick="setLang('vi')" class="px-3 py-1 rounded-full hover:bg-slate-700">VI</button>
+  </nav>
+
   <!-- ============== HERO ============== -->
   <header class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-800 to-slate-900"></div>
     <div class="absolute top-0 left-1/3 -translate-x-1/2 w-[700px] h-[700px] bg-sky-500/10 rounded-full blur-3xl"></div>
     <div class="absolute top-20 right-0 w-[600px] h-[600px] bg-amber-400/15 rounded-full blur-3xl"></div>
 
-    <div class="relative max-w-3xl mx-auto px-6 pt-20 pb-24 sm:pt-32 sm:pb-32">
-      <p class="text-sm font-mono text-amber-400 mb-4">Tô Minh Phong &nbsp;·&nbsp; Realtor tại Sherman &amp; DFW, Texas 🇺🇸</p>
+    <div class="relative max-w-3xl mx-auto px-6 pt-24 pb-20 sm:pt-32 sm:pb-28">
+      <p class="text-sm font-mono text-amber-400 mb-4">Phong To (Tô Minh Phong) &nbsp;·&nbsp; Texas 🇺🇸 &nbsp;·&nbsp; Show My Work</p>
 
       <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">
-        Em là Phong.<br />
-        Realtor tại Sherman &amp; DFW Texas — chia sẻ kiến thức bất động sản Mỹ cho gia đình Việt, cùng hành trình áp dụng <span class="gradient-text">AI</span> vào nghề.
+        <span class="lang-en">I build AI agents<br /><span class="gradient-text">that work 24/7.</span></span>
+        <span class="lang-vi">Phong dựng đội AI agent<br /><span class="gradient-text">làm việc 24/7.</span></span>
       </h1>
 
-      <p class="text-lg text-slate-300 leading-relaxed mb-10">
-        Em phục vụ các gia đình Việt — đang sống tại Mỹ, hoặc đang ở Việt Nam muốn đầu tư bất động sản tại Mỹ. Trang này là nơi em chia sẻ công khai những gì học được mỗi ngày — bằng tiếng Việt, đều đặn, thực tế.
+      <p class="text-lg text-slate-300 leading-relaxed mb-8">
+        <span class="lang-en">I am not a software developer. I am a Vietnamese-American who learned to direct AI. Since April 2026 I have built and run a team of 25 AI agents on 4 computers. They make Vietnamese videos, publish to 8 platforms, and run 42 browser skills I designed. This page shows the work, with real numbers.</span>
+        <span class="lang-vi">Phong không phải lập trình viên. Phong là người Mỹ gốc Việt, tự học cách điều khiển AI. Từ tháng 4/2026, Phong dựng và vận hành một đội 25 AI agent trên 4 máy tính. Đội agent làm video tiếng Việt, đăng bài lên 8 nền tảng và chạy 42 skill trình duyệt do Phong thiết kế. Trang này cho xem công việc thật, kèm số liệu thật.</span>
       </p>
 
       <div class="flex flex-wrap gap-3">
-        <a href="/posts/xin-chao" class="px-5 py-3 rounded-lg bg-amber-400 hover:bg-amber-300 text-slate-900 font-semibold transition shadow-lg shadow-amber-400/20">
-          Đọc giới thiệu của em →
+        <a href="#agents" class="inline-flex items-center px-5 py-3 rounded-lg bg-amber-400 text-slate-900 font-semibold hover:bg-amber-300 transition">
+          <span class="lang-en">See the work →</span><span class="lang-vi">Xem công việc →</span>
         </a>
-        <a href="#now" class="px-5 py-3 rounded-lg border border-slate-700 hover:border-amber-400/40 text-slate-200 font-medium transition">
-          Tuần này em đang làm gì
+        <a href="mailto:tominhphong@outlook.com" class="inline-flex items-center px-5 py-3 rounded-lg border border-slate-600 text-slate-200 hover:border-slate-400 transition">
+          tominhphong@outlook.com
         </a>
-        <a href="https://www.youtube.com/@phongrealtortx" target="_blank" rel="noopener" class="px-5 py-3 rounded-lg border border-slate-700 hover:border-slate-500 text-slate-200 font-medium transition">
-          YouTube
-        </a>
-        <a href="mailto:phong.to@exprealty.com" class="px-5 py-3 rounded-lg border border-slate-700 hover:border-slate-500 text-slate-200 font-medium transition">
-          Email
-        </a>
-      </div>
-
-      <div class="mt-12 flex flex-wrap gap-2 text-xs font-mono">
-        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300">Sherman &amp; DFW</span>
-        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300">Bất động sản Mỹ</span>
-        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300">Đầu tư từ Việt Nam</span>
-        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300">AI vào nghề</span>
-        <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300">Tiếng Việt</span>
       </div>
     </div>
   </header>
 
-  <!-- ============== /NOW ============== -->
-  <section id="now" class="max-w-3xl mx-auto px-6 py-20">
-    <div class="mb-10">
-      <p class="text-sm font-mono text-amber-400 mb-2">/ tuần này</p>
-      <h2 class="text-3xl sm:text-4xl font-bold">Em đang làm gì</h2>
-      <p class="mt-3 text-slate-400">Cập nhật mỗi tuần. Đây là một <a href="https://nownownow.com/about" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300 underline decoration-dotted">/now page</a>.</p>
-    </div>
-
-    <div class="rounded-xl border border-slate-700/60 bg-slate-800/50 p-6 space-y-4 text-slate-300">
-      <p>
-        <span class="text-slate-500 font-mono text-sm">2026-05-31</span>
-      </p>
-      <ul class="space-y-3 list-disc pl-5 marker:text-amber-400">
-        <li>Em đang khởi động lại kênh YouTube <a href="https://www.youtube.com/@phongrealtortx" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300">@phongrealtortx</a> — pivot hoàn toàn sang nội dung tiếng Việt về bất động sản Mỹ.</li>
-        <li>Em đang học cách dùng AI (Claude, Gemini, Subscribr) để viết script, tạo thumbnail, dựng video — toàn bộ pipeline.</li>
-        <li>Em đang chuẩn bị video đầu tiên về <em>"Thuế Nhà Ở Texas 2026: Người Việt cần biết gì?"</em>.</li>
-      </ul>
-      <p class="text-slate-500 text-sm italic">
-        Bài giới thiệu đầu tiên đã đăng — anh chị đọc ở section <a href="#nhat-ky" class="text-amber-400 hover:text-amber-300">/nhật ký</a> bên dưới.
-      </p>
-    </div>
-  </section>
-
-  <!-- ============== NHẬT KÝ ============== -->
-  <section id="nhat-ky" class="max-w-3xl mx-auto px-6 py-20 border-t border-slate-800">
-    <div class="mb-10">
-      <p class="text-sm font-mono text-amber-400 mb-2">/ nhật ký</p>
-      <h2 class="text-3xl sm:text-4xl font-bold">Nhật ký học và làm</h2>
-      <p class="mt-3 text-slate-400">Kiến thức bất động sản Mỹ và hành trình AI — bằng tiếng Việt, đều đặn.</p>
-    </div>
-
-    <a href="/posts/xin-chao" class="block rounded-xl border border-slate-700/60 bg-slate-800/50 hover:bg-slate-800/80 hover:border-amber-400/40 transition p-6 sm:p-8 group">
-      <div class="flex items-center gap-3 mb-4 text-xs font-mono">
-        <span class="text-amber-400">31/05/2026</span>
-        <span class="text-slate-600">·</span>
-        <span class="text-slate-400">giới thiệu</span>
-      </div>
-      <h3 class="text-xl sm:text-2xl font-bold text-slate-100 group-hover:text-amber-300 transition mb-3 leading-snug">
-        Xin chào — và đây là lý do em mở trang này
-      </h3>
-      <p class="text-slate-300 leading-relaxed mb-5">
-        Một Realtor người Việt ở Sherman, Texas — chia sẻ kiến thức bất động sản Mỹ và hành trình áp dụng AI vào nghề. Đây là "viên gạch" đầu tiên.
-      </p>
-      <span class="inline-flex items-center gap-1 text-amber-400 group-hover:text-amber-300 font-mono text-sm">
-        Đọc tiếp <span class="transition group-hover:translate-x-1">→</span>
-      </span>
-    </a>
-
-    <p class="mt-8 text-sm text-slate-500 text-center">
-      Theo tinh thần <em>Show Your Work!</em> của Austin Kleon — làm, ghi lại, chia sẻ, lặp lại.
+  <!-- ============== NUMBERS ============== -->
+  <section class="max-w-3xl mx-auto px-6 pb-16">
+    <p class="text-xs font-mono text-slate-500 mb-4">
+      <span class="lang-en">Measured from the team's own database on 2 Nov 2026.</span>
+      <span class="lang-vi">Số liệu đo từ database của đội agent ngày 02/11/2026.</span>
     </p>
-  </section>
-
-  <!-- ============== ABOUT ============== -->
-  <section id="ve-em" class="max-w-3xl mx-auto px-6 py-20 border-t border-slate-800">
-    <div class="mb-10">
-      <p class="text-sm font-mono text-amber-400 mb-2">/ về em</p>
-      <h2 class="text-3xl sm:text-4xl font-bold">Phong là ai</h2>
-    </div>
-
-    <div class="space-y-5 text-slate-300 leading-relaxed">
-      <p>
-        Em là <strong class="text-slate-100">Phong</strong> — Realtor tại khu vực <strong class="text-slate-100">Sherman và các vùng lân cận DFW, Texas</strong>. Khách hàng của em chủ yếu là các gia đình Việt — đang sống tại Mỹ, hoặc đang ở Việt Nam muốn đầu tư bất động sản tại Mỹ.
-      </p>
-
-      <p>
-        Em không phải developer hay chuyên gia tech. Em đang áp dụng <strong class="text-slate-100">AI vào quy trình làm việc và tư vấn khách hàng</strong> — với mong muốn nâng cao trải nghiệm khách hàng và tiết kiệm thời gian. Em sẽ chia sẻ cả ưu điểm và khuyết điểm của AI khi dùng thật, để mang đến giá trị thật và bài học thật.
-      </p>
-
-      <p>
-        Trang này có <strong class="text-slate-100">hai mục đích, một nơi</strong>: chia sẻ kiến thức bất động sản Mỹ bằng tiếng Việt cho các gia đình Việt đang tìm hiểu mua hoặc đầu tư, và ghi lại hành trình em học hỏi áp dụng AI vào nghề Realtor. Cả ưu điểm lẫn khuyết điểm.
-      </p>
-
-      <p class="text-sm text-slate-400 pt-3">
-        Liên hệ:
-        <a href="mailto:phong.to@exprealty.com" class="text-sky-400 hover:text-sky-300">phong.to@exprealty.com</a>
-        &nbsp;·&nbsp;
-        <a href="https://www.youtube.com/@phongrealtortx" target="_blank" rel="noopener" class="text-sky-400 hover:text-sky-300">YouTube @phongrealtortx</a>
-      </p>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="rounded-xl bg-slate-800/60 border border-slate-700 p-4">
+        <p class="text-3xl font-bold text-amber-400">15,659</p>
+        <p class="text-sm text-slate-400"><span class="lang-en">posts published</span><span class="lang-vi">bài đã đăng</span></p>
+      </div>
+      <div class="rounded-xl bg-slate-800/60 border border-slate-700 p-4">
+        <p class="text-3xl font-bold text-amber-400">8</p>
+        <p class="text-sm text-slate-400"><span class="lang-en">platforms</span><span class="lang-vi">nền tảng</span></p>
+      </div>
+      <div class="rounded-xl bg-slate-800/60 border border-slate-700 p-4">
+        <p class="text-3xl font-bold text-amber-400">35,965</p>
+        <p class="text-sm text-slate-400"><span class="lang-en">logged agent actions</span><span class="lang-vi">thao tác agent đã ghi lại</span></p>
+      </div>
+      <div class="rounded-xl bg-slate-800/60 border border-slate-700 p-4">
+        <p class="text-3xl font-bold text-amber-400">42</p>
+        <p class="text-sm text-slate-400"><span class="lang-en">browser skills</span><span class="lang-vi">skill trình duyệt</span></p>
+      </div>
     </div>
   </section>
 
-  <!-- ============== FOOTER ============== -->
+  <main class="max-w-3xl mx-auto px-6 pb-24 space-y-20">
+
+    <!-- ============== 1. AGENT TEAM ============== -->
+    <section id="agents">
+      <p class="text-sm font-mono text-sky-400 mb-2">01 /</p>
+      <h2 class="text-3xl font-bold mb-4">
+        <span class="lang-en">A 24/7 AI agent team on 4 computers</span>
+        <span class="lang-vi">Đội AI agent 24/7 trên 4 máy</span>
+      </h2>
+      <p class="text-slate-300 leading-relaxed mb-6">
+        <span class="lang-en">I run my AI work like a small company. One main agent plans the work and hands jobs to worker agents on each machine. Every agent writes what it does to one shared log, so I can check any result.</span>
+        <span class="lang-vi">Phong vận hành công việc AI như một công ty nhỏ. Một agent chính lên kế hoạch và giao việc cho các agent trên từng máy. Agent nào làm gì cũng ghi vào một sổ chung, nên kết quả nào Phong cũng kiểm lại được.</span>
+      </p>
+      <ul class="space-y-3 text-slate-300">
+        <li class="flex gap-3"><span class="text-amber-400">▸</span>
+          <span><span class="lang-en"><b>4 machines:</b> Mac Studio (planning and R&amp;D), Mac mini M5 Pro (24/7 production server), Mac mini M4 (research), Windows mini PC (video work), plus a NAS for media.</span>
+          <span class="lang-vi"><b>4 máy:</b> Mac Studio (điều phối và R&amp;D), Mac mini M5 Pro (máy chủ chạy 24/7), Mac mini M4 (nghiên cứu), mini PC Windows (làm video), cùng một NAS lưu media.</span></span></li>
+        <li class="flex gap-3"><span class="text-amber-400">▸</span>
+          <span><span class="lang-en"><b>25 agents</b> built on Claude Code, Google Gemini and ChatGPT, each with one clear role.</span>
+          <span class="lang-vi"><b>25 agent</b> dựng trên Claude Code, Google Gemini và ChatGPT, mỗi agent một vai trò rõ ràng.</span></span></li>
+        <li class="flex gap-3"><span class="text-amber-400">▸</span>
+          <span><span class="lang-en"><b>Shared memory:</b> 2,156 lessons that every agent can search before it acts, and 567 tracked jobs and questions on one board.</span>
+          <span class="lang-vi"><b>Bộ nhớ chung:</b> 2.156 bài học mà agent nào cũng tra được trước khi làm, và 567 việc, câu hỏi được theo dõi trên một bảng.</span></span></li>
+        <li class="flex gap-3"><span class="text-amber-400">▸</span>
+          <span><span class="lang-en"><b>Quality checks:</b> an AI judge scores important decisions before the agents act, and every claim must be checked against live data.</span>
+          <span class="lang-vi"><b>Kiểm tra chất lượng:</b> một AI giám khảo chấm điểm các quyết định quan trọng trước khi agent làm, và mọi thông tin phải kiểm lại bằng dữ liệu thật.</span></span></li>
+        <li class="flex gap-3"><span class="text-amber-400">▸</span>
+          <span><span class="lang-en"><b>Data:</b> one PostgreSQL database holds the log, the content calendar and a library of 3,736 media files.</span>
+          <span class="lang-vi"><b>Dữ liệu:</b> một database PostgreSQL chứa sổ hoạt động, lịch nội dung và thư viện 3.736 file media.</span></span></li>
+      </ul>
+    </section>
+
+    <!-- ============== 2. AI VIDEO ============== -->
+    <section id="video">
+      <p class="text-sm font-mono text-sky-400 mb-2">02 /</p>
+      <h2 class="text-3xl font-bold mb-4">
+        <span class="lang-en">Vietnamese AI video, end to end</span>
+        <span class="lang-vi">Video AI tiếng Việt, từ đầu tới cuối</span>
+      </h2>
+      <p class="text-slate-300 leading-relaxed mb-6">
+        <span class="lang-en">The agents write the script, check the facts, record a Vietnamese voice, add captions and a thumbnail, then publish. The output covers 13 brands and channels, from real estate to AI tutorials and pet tips.</span>
+        <span class="lang-vi">Đội agent viết kịch bản, kiểm tra thông tin, thu giọng đọc tiếng Việt, thêm phụ đề và thumbnail rồi đăng. Sản phẩm phủ 13 thương hiệu và kênh, từ bất động sản tới hướng dẫn AI và mẹo nuôi thú cưng.</span>
+      </p>
+      <div class="grid sm:grid-cols-2 gap-4 mb-6">
+        <div class="aspect-video rounded-xl overflow-hidden border border-slate-700">
+          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/gwqNl3YC4fA" title="AI video sample 1" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <div class="aspect-video rounded-xl overflow-hidden border border-slate-700">
+          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/MuTHNKlYiPw" title="AI video sample 2" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+      <ul class="space-y-3 text-slate-300">
+        <li class="flex gap-3"><span class="text-amber-400">▸</span>
+          <span><span class="lang-en"><b>Published so far:</b> Facebook 3,266 · Instagram 3,257 · TikTok 3,195 · YouTube 3,097 · Threads, Bluesky, LinkedIn, Pinterest.</span>
+          <span class="lang-vi"><b>Đã đăng:</b> Facebook 3.266 · Instagram 3.257 · TikTok 3.195 · YouTube 3.097 · cùng Threads, Bluesky, LinkedIn, Pinterest.</span></span></li>
+        <li class="flex gap-3"><span class="text-amber-400">▸</span>
+          <span><span class="lang-en"><b>In R&amp;D now:</b> longer 8-10 minute Vietnamese videos with an AI avatar and a natural Southern Vietnamese voice.</span>
+          <span class="lang-vi"><b>Đang nghiên cứu:</b> video tiếng Việt dài 8-10 phút với avatar AI và giọng miền Nam tự nhiên.</span></span></li>
+      </ul>
+    </section>
+
+    <!-- ============== 3. BROWSER AUTOMATION ============== -->
+    <section id="automation">
+      <p class="text-sm font-mono text-sky-400 mb-2">03 /</p>
+      <h2 class="text-3xl font-bold mb-4">
+        <span class="lang-en">Browser automation skills</span>
+        <span class="lang-vi">Skill tự động hóa trình duyệt</span>
+      </h2>
+      <p class="text-slate-300 leading-relaxed mb-6">
+        <span class="lang-en">Some work has no API, so I teach agents to use a real web browser like a person: read the page, click, fill forms, and report what happened. Each skill is a written, tested recipe that any agent can reuse.</span>
+        <span class="lang-vi">Có những việc không có API, nên Phong dạy agent dùng trình duyệt thật như người: đọc trang, bấm, điền form và báo lại kết quả. Mỗi skill là một quy trình đã viết ra và đã chạy thử, agent nào cũng dùng lại được.</span>
+      </p>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="rounded-xl bg-slate-800/60 border border-slate-700 p-5">
+          <p class="text-2xl font-bold text-amber-400">33</p>
+          <p class="font-semibold mb-1">Facebook</p>
+          <p class="text-sm text-slate-400"><span class="lang-en">Posts, reels, stories, group posts, comments, group scouting and moderation.</span><span class="lang-vi">Đăng bài, reel, story, đăng vào nhóm, bình luận, dò nhóm và quản trị nhóm.</span></p>
+        </div>
+        <div class="rounded-xl bg-slate-800/60 border border-slate-700 p-5">
+          <p class="text-2xl font-bold text-amber-400">8</p>
+          <p class="font-semibold mb-1">Real estate MLS</p>
+          <p class="text-sm text-slate-400"><span class="lang-en">Market reports, price changes, comparable sales and daily listing checks.</span><span class="lang-vi">Báo cáo thị trường, theo dõi giảm giá, so sánh giá bán và kiểm tra nhà mới mỗi ngày.</span></p>
+        </div>
+        <div class="rounded-xl bg-slate-800/60 border border-slate-700 p-5">
+          <p class="text-2xl font-bold text-amber-400">1</p>
+          <p class="font-semibold mb-1">Forms</p>
+          <p class="text-sm text-slate-400"><span class="lang-en">Sign-in to a transaction forms platform with saved credentials.</span><span class="lang-vi">Đăng nhập nền tảng giấy tờ giao dịch bằng thông tin đã lưu.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CONTACT ============== -->
+    <section id="contact" class="rounded-2xl bg-slate-800/60 border border-slate-700 p-8">
+      <h2 class="text-2xl font-bold mb-3">
+        <span class="lang-en">Work with me</span>
+        <span class="lang-vi">Liên hệ</span>
+      </h2>
+      <p class="text-slate-300 mb-4">
+        <span class="lang-en">Open to remote AI work and AI automation projects. Email is the best way to reach me.</span>
+        <span class="lang-vi">Phong nhận việc AI làm từ xa và các dự án tự động hóa bằng AI. Cách liên hệ tốt nhất là email.</span>
+      </p>
+      <a href="mailto:tominhphong@outlook.com" class="inline-flex items-center px-5 py-3 rounded-lg bg-amber-400 text-slate-900 font-semibold hover:bg-amber-300 transition">✉️ tominhphong@outlook.com</a>
+    </section>
+  </main>
+
   <footer class="border-t border-slate-800">
-    <div class="max-w-3xl mx-auto px-6 py-12 grid sm:grid-cols-2 gap-8 text-sm text-slate-400">
-      <div>
-        <p class="text-slate-100 font-semibold text-base">Phong To</p>
-        <p class="mt-1 text-slate-300">Realtor at eXp Realty</p>
-        <p class="mt-3 font-mono text-xs text-slate-500">DFW, Texas 🇺🇸 &nbsp;·&nbsp; Tiếng Việt</p>
-        <p class="mt-1 font-mono text-xs text-slate-500">© 2026 Tô Minh Phong</p>
-      </div>
-      <div class="sm:text-right space-y-1.5">
-        <p>
-          <a href="tel:+17372429999" class="hover:text-slate-200">📞 737-242-9999</a>
-        </p>
-        <p>
-          <a href="mailto:phong.to@exprealty.com" class="hover:text-slate-200">✉️ phong.to@exprealty.com</a>
-        </p>
-        <p>
-          <a href="https://www.youtube.com/@phongrealtortx" target="_blank" rel="noopener" class="hover:text-slate-200">📺 YouTube @phongrealtortx</a>
-        </p>
-      </div>
+    <div class="max-w-3xl mx-auto px-6 py-8 text-sm text-slate-500">
+      © 2026 Phong To (Tô Minh Phong)
     </div>
   </footer>
-
 </body>
 </html>

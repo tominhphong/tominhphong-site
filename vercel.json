@@ -1,4 +1,7 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/posts/:path*", "destination": "/archive/realtor-2026-05/posts/:path*", "permanent": true }
+  ]
 }
