@@ -1,8 +1,8 @@
 ﻿# Video Style Gallery
 
-**EN** A browsable gallery of the 70 [AgentKit motion-video](https://github.com/bestagentkits/motion-video-skill) styles, built with HyperFrames. Each style card shows its summary, the three topics that fit it best (scored by Jev, 100-176 candidate topics), and, for the styles built so far, two 10-second 1080x1920 samples plus a recipe document you can copy into your own agent.
+**EN** A browsable gallery of the 70 [AgentKit motion-video](https://agentkit.best/?ref=JGRILPGH) styles, built with HyperFrames. Each style card shows its summary, the three topics that fit it best (scored by Jev, 100-176 candidate topics), and, for the styles built so far, two 10-second 1080x1920 samples plus a recipe document you can copy into your own agent.
 
-**VI** Thư viện 70 phong cách video của AgentKit motion-video, dựng bằng HyperFrames. Mỗi thẻ có mô tả, ba chủ đề hợp nhất (điểm Jev), và với các phong cách đã dựng thì có hai đoạn mẫu 10 giây 1080x1920 cùng tài liệu công thức để chép vào agent của bạn.
+**VI** Thư viện 70 phong cách video của [AgentKit motion-video](https://agentkit.best/?ref=JGRILPGH), dựng bằng HyperFrames. Mỗi thẻ có mô tả, ba chủ đề hợp nhất (điểm Jev), và với các phong cách đã dựng thì có hai đoạn mẫu 10 giây 1080x1920 cùng tài liệu công thức để chép vào agent của bạn.
 
 Created by **Phong To**.
 
@@ -39,4 +39,4 @@ https://agentkit.best/?ref=JGRILPGH
 
 ## Credits and licence
 
-Apache-2.0 (see `LICENSE`). Style profiles come from AgentKit motion-video (MIT); see `NOTICE`. Page layout inspired by video-shotcraft (Apache-2.0).
+Apache-2.0 (see `LICENSE`). Style profiles come from [AgentKit motion-video](https://agentkit.best/?ref=JGRILPGH) (MIT); see `NOTICE` for the upstream source. Page layout inspired by video-shotcraft (Apache-2.0).
