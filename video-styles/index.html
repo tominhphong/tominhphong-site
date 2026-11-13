@@ -1,0 +1,181 @@
+﻿<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<script>(function(){var p=location.pathname;if(!/\/$|\.html$/.test(p)){var b=document.createElement('base');b.href=p+'/';document.head.appendChild(b)}})()</script>
+<title>Video Style Gallery</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky filter bar over a card grid of 9:16 posters; a detail sheet slides over for videos, topic scores and the style document. */
+:root{
+  --bg:#f4f5f2; --surface:#ffffff; --surface2:#eceee9; --fg:#14201c; --mute:#5b6a64; --line:#d8ddd6;
+  --accent:#0b6e5c; --accent-fg:#ffffff; --warn:#9a5b00; --warn-bg:#fbefd6; --ok-bg:#dcf2e8; --bar:#0b6e5c;
+  --font-display:'Space Grotesk',system-ui,sans-serif; --font-body:'Inter',system-ui,sans-serif; --font-mono:'JetBrains Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1714; --surface:#17211d; --surface2:#1f2b26; --fg:#e6ede9; --mute:#98a7a0; --line:#2b3a34;
+  --accent:#4fd1b0; --accent-fg:#06201a; --warn:#f0b957; --warn-bg:#33270f; --ok-bg:#15362b; --bar:#4fd1b0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1714; --surface:#17211d; --surface2:#1f2b26; --fg:#e6ede9; --mute:#98a7a0; --line:#2b3a34;
+  --accent:#4fd1b0; --accent-fg:#06201a; --warn:#f0b957; --warn-bg:#33270f; --ok-bg:#15362b; --bar:#4fd1b0; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--font-body);margin:0;
+  padding-block:0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1180px;margin:0 auto}
+header{padding-block:28px 12px;display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+h1{font:700 clamp(26px,4.2vw,40px)/1.1 var(--font-display);margin:0 0 6px;text-wrap:balance}
+.sub{color:var(--mute);max-width:62ch;margin:0}
+.tools{display:flex;gap:8px}
+button,.btn{font:500 14px var(--font-body);border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:8px 12px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.stats{display:flex;gap:20px;flex-wrap:wrap;margin:14px 0 0;font:500 13px var(--font-mono);color:var(--mute)}
+.stats b{color:var(--fg);font-weight:500}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;border-bottom:1px solid var(--line)}
+.bar-in{display:flex;flex-direction:column;gap:10px}
+input[type=search]{width:100%;font:15px var(--font-body);padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font:500 13px var(--font-body);padding:5px 11px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--mute)}
+.chip[aria-pressed=true]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;padding-block:20px 60px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;text-align:left;padding:0;min-width:0}
+.card:hover{border-color:var(--accent)}
+.poster{aspect-ratio:9/16;max-width:100%;background:var(--surface2);display:block;width:100%;object-fit:cover}
+.noposter{aspect-ratio:9/16;display:flex;flex-direction:column;justify-content:space-between;padding:16px;background:var(--surface2)}
+.noposter .mono{font:500 12px var(--font-mono);color:var(--mute)}
+.noposter p{margin:0;font-size:14px;color:var(--fg)}
+.body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px}
+.name{font:700 17px var(--font-display)}
+.meta{font:400 12px var(--font-mono);color:var(--mute)}
+.badge{display:inline-block;font:500 11px var(--font-mono);padding:2px 8px;border-radius:99px;background:var(--surface2);color:var(--mute)}
+.badge.ok{background:var(--ok-bg);color:var(--fg)}
+.badge.part{background:var(--warn-bg);color:var(--warn)}
+.empty{padding:50px 0;color:var(--mute);text-align:center}
+dialog{border:1px solid var(--line);border-radius:14px;padding:0;background:var(--bg);color:var(--fg);width:min(980px,calc(100vw - 24px));max-height:calc(100vh - 24px);overflow:auto}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+.dhead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:18px 20px 8px}
+.dhead h2{font:700 26px var(--font-display);margin:0}
+.dbody{padding:4px 20px 22px;display:flex;flex-direction:column;gap:18px}
+.vids{display:flex;gap:12px;overflow-x:auto;padding-bottom:6px}
+.vid{flex:0 0 auto;width:210px}
+.vid video{width:100%;aspect-ratio:9/16;background:#000;border-radius:10px;display:block}
+.vid .meta{margin-top:4px}
+h3{font:700 13px var(--font-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:0 0 8px}
+.tp{display:grid;grid-template-columns:1fr 64px;gap:6px 12px;align-items:center}
+.tp span{font-size:14px;min-width:0}
+.meter{height:8px;background:var(--surface2);border-radius:99px;overflow:hidden;grid-column:1/-1}
+.meter i{display:block;height:100%;background:var(--bar)}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+pre{margin:0;white-space:pre-wrap;word-break:break-word;font:12.5px/1.55 var(--font-mono);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;max-height:360px;overflow:auto}
+.notes{font-size:13.5px;color:var(--mute);margin:0}
+details summary{cursor:pointer;font-weight:500}
+a{color:var(--accent)}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:14px;z-index:20}
+@media (max-width:520px){.vid{width:170px}.dhead h2{font-size:22px}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head><body>
+
+<div class="wrap">
+<header>
+  <div>
+    <h1 data-i="title">Thư viện phong cách video</h1>
+    <p class="sub" data-i="sub"></p>
+    <div class="stats" id="stats"></div>
+    <p class="meta" style="margin:8px 0 0;max-width:70ch" data-i="overlap"></p>
+  </div>
+  <div class="tools">
+    <button id="lang" type="button" aria-label="Language">EN</button>
+    <button id="theme" type="button" data-i="theme">Sáng/Tối</button>
+  </div>
+</header>
+<div class="bar"><div class="bar-in">
+  <input id="q" type="search" data-iph="search" autocomplete="off">
+  <div class="chips" id="fam"></div>
+  <div class="chips" id="stat"></div>
+</div></div>
+<div class="grid" id="grid" aria-live="polite"></div>
+<div class="empty" id="empty" hidden data-i="none"></div>
+<footer class="meta" style="max-width:70ch;padding-bottom:40px"><span data-i="aff"></span> <a href="https://agentkit.best/?ref=JGRILPGH" target="_blank" rel="noopener sponsored">agentkit.best</a></footer>
+</div>
+
+<dialog id="dlg"><div id="dc"></div></dialog>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const T={vi:{title:"Thư viện phong cách video",sub:"70 phong cách video của <a href=\"https://agentkit.best/?ref=JGRILPGH\" target=\"_blank\" rel=\"noopener sponsored\">AgentKit motion-video</a>, dựng bằng HyperFrames. Mỗi thẻ có điểm Jev cho ba chủ đề hợp nhất. Phong cách đã dựng có đoạn mẫu 10 giây 1080×1920 và tài liệu công thức. Tạo bởi Phong To.",theme:"Sáng/Tối",search:"Tìm tên, nhóm, kiểu nội dung…",all:"Tất cả",built:"Đã dựng",partial:"Dựng dở",todo:"Chưa dựng",none:"Không có phong cách nào khớp.",styles:"phong cách",withvideo:"có video",full:"Video đầy đủ",sample:"Đoạn mẫu",topics:"Chủ đề hợp (điểm Jev)",bestfor:"Hợp với",recipe:"Chép công thức",view:"Xem tài liệu",hide:"Ẩn tài liệu",copied:"Đã chép tài liệu phong cách",copyfail:"Không chép được, hãy bôi đen rồi chép tay",close:"Đóng",notes:"Ghi chú dựng (nguồn, điểm chưa chắc)",sources:"Nguồn",energy:"Năng lượng",dark:"nền tối",light:"nền sáng",nobuilt:"Chưa có video. Chủ đề dự kiến theo điểm Jev ở bên dưới.",partialnote:"Dựng dở: thiếu báo cáo tự kiểm. Tài liệu có thể chưa đủ.",story:"Tin gốc",lenv:"s",cost:"Chi phí quy đổi",turns:"lượt",min:"phút",docnote:"Tài liệu viết bằng tiếng Anh.",aff:"Các phong cách này lấy từ bộ AgentKit motion-video. Nếu bạn mua AgentKit qua liên kết giới thiệu của tác giả, bạn được giảm 20% lần mua đầu và tác giả nhận hoa hồng (liên kết tiếp thị).",overlap:"Lưu ý: vài đoạn mẫu 10 giây dùng chung chủ đề giữa các phong cách (ví dụ organic-biomorphic và documentary-purpose, groovy-seventies và retro-crt-broadcast), để so sánh cùng nội dung ở hai kiểu hình ảnh khác nhau.",fam:{"brand-inspired":"Lấy cảm hứng từ thương hiệu",aesthetic:"Thẩm mỹ",house:"Của nhà"}},
+en:{title:"Video Style Library",sub:"70 <a href=\"https://agentkit.best/?ref=JGRILPGH\" target=\"_blank\" rel=\"noopener sponsored\">AgentKit motion-video</a> styles, built with HyperFrames. Each card shows Jev scores for its three best-fit topics. Built styles have 10 s 1080x1920 samples and a recipe document. Created by Phong To.",theme:"Light/Dark",search:"Search name, family, content type…",all:"All",built:"Built",partial:"Partial",todo:"Not built",none:"No style matches.",styles:"styles",withvideo:"with video",full:"Full video",sample:"Sample",topics:"Best-fit topics (Jev score)",bestfor:"Best for",recipe:"Copy recipe",view:"View document",hide:"Hide document",copied:"Style document copied",copyfail:"Copy blocked, select the text and copy by hand",close:"Close",notes:"Build notes (sources, weak points)",sources:"Sources",energy:"Energy",dark:"dark",light:"light",nobuilt:"No video yet. Planned topics by Jev score below.",partialnote:"Partial build: self-check missing. The document may be incomplete.",story:"Source story",lenv:"s",cost:"API-equivalent cost",turns:"turns",min:"min",docnote:"Document is in English.",aff:"These styles come from the AgentKit motion-video skill. If you buy AgentKit through the author's referral link, you get 20% off your first purchase and the author earns a commission (affiliate link).",overlap:"Note: some 10 s samples reuse a topic across styles (e.g. organic-biomorphic and documentary-purpose, groovy-seventies and retro-crt-broadcast), so the same content can be compared in two looks.",fam:{"brand-inspired":"Brand-inspired",aesthetic:"Aesthetic",house:"House"}}};
+let L=(()=>{try{return localStorage.getItem('lang')||'vi'}catch(e){return 'vi'}})();
+let D=[],famSel='all',statSel='all',q='';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const t=k=>T[L][k];
+const state=s=>!s.built?'todo':(s.built.complete?'built':'partial');
+function applyLang(){
+  document.documentElement.lang=L; $('#lang').textContent=L==='vi'?'EN':'VI';
+  document.querySelectorAll('[data-i]').forEach(e=>{if(e.dataset.i==='sub')e.innerHTML=t('sub');else e.textContent=t(e.dataset.i)});
+  $('#q').placeholder=t('search'); render();
+}
+function chips(){
+  const fams=['all',...new Set(D.map(s=>s.family))];
+  $('#fam').innerHTML=fams.map(f=>`<button class="chip" type="button" data-f="${f}" aria-pressed="${famSel===f}">${f==='all'?t('all'):(T[L].fam[f]||f)} (${f==='all'?D.length:D.filter(s=>s.family===f).length})</button>`).join('');
+  $('#stat').innerHTML=['all','built','partial','todo'].map(k=>`<button class="chip" type="button" data-s="${k}" aria-pressed="${statSel===k}">${t(k)}</button>`).join('');
+}
+function match(s){
+  if(famSel!=='all'&&s.family!==famSel)return false;
+  if(statSel!=='all'&&state(s)!==statSel)return false;
+  if(!q)return true;
+  const h=(s.id+' '+s.family+' '+s.summary+' '+s.best_for.join(' ')+' '+s.topics.map(x=>x.topic).join(' ')).toLowerCase();
+  return q.split(/\s+/).every(w=>h.includes(w));
+}
+function render(){
+  chips();
+  const list=D.filter(match).sort((a,b)=>({built:0,partial:1,todo:2}[state(a)]-{built:0,partial:1,todo:2}[state(b)])||a.id.localeCompare(b.id));
+  const nb=D.filter(s=>s.built).length;
+  $('#stats').innerHTML=`<span><b>${D.length}</b> ${t('styles')}</span><span><b>${nb}</b> ${t('withvideo')}</span><span><b>${list.length}</b> ⟶ ${t('all').toLowerCase()}</span>`;
+  $('#grid').innerHTML=list.map(s=>{
+    const st=state(s),b=s.built;
+    const top=s.topics[0];
+    const media=b&&b.poster?`<img class="poster" src="${b.poster}" alt="${esc(s.id)}" loading="lazy">`:
+      `<div class="noposter"><span class="mono">${esc(s.mode==='dark'?t('dark'):t('light'))} · ${t('energy')} ${s.energy}/5</span><p>${esc(s.summary)}</p></div>`;
+    return `<button class="card" type="button" data-id="${s.id}">${media}<div class="body"><div class="name">${esc(s.id)}</div>
+      <div class="meta">${esc(T[L].fam[s.family]||s.family)}</div>
+      <div><span class="badge ${st==='built'?'ok':st==='partial'?'part':''}">${t(st)}</span> <span class="badge">${top.jev.toFixed(2)}</span></div>
+      <div class="meta">${esc(top.topic)}</div></div></button>`}).join('');
+  $('#empty').hidden=list.length>0;
+}
+async function openCard(id){
+  const s=D.find(x=>x.id===id),b=s.built,st=state(s);
+  const vids=b?b.samples.map(x=>({f:x.file,p:x.poster,l:t('sample')+' · '+x.topic})):[];
+  $('#dc').innerHTML=`<div class="dhead"><div><h2>${esc(s.id)}</h2><div class="meta">${esc(T[L].fam[s.family]||s.family)} · ${esc(s.mode==='dark'?t('dark'):t('light'))} · ${t('energy')} ${s.energy}/5</div></div><button type="button" id="x">${t('close')}</button></div>
+  <div class="dbody">
+   <p style="margin:0">${esc(s.summary)}</p>
+   <div class="meta">${t('bestfor')}: ${esc(s.best_for.join(', '))}</div>
+   ${vids.length?`<div class="vids">${vids.map(v=>`<div class="vid"><video controls preload="none" playsinline poster="${v.p}" src="${v.f}"></video><div class="meta">${esc(v.l)}</div></div>`).join('')}</div>`:`<p class="notes">${t('nobuilt')}</p>`}
+   ${st==='partial'?`<p class="notes" style="color:var(--warn)">${t('partialnote')}</p>`:''}
+   <div><h3>${t('topics')}</h3><div class="tp">${s.topics.map(x=>`<span>${esc(x.topic)}</span><span class="meta" style="text-align:right">${x.jev.toFixed(2)}</span><div class="meter"><i style="width:${Math.round(x.jev*100)}%"></i></div>`).join('')}</div></div>
+   ${b?`<div class="row"><button class="primary" type="button" id="cp">${t('recipe')}</button><button type="button" id="vw">${t('view')}</button></div><pre id="doc" hidden></pre>
+
+   <div class="meta">${t('docnote')}</div>`:''}
+  </div>`;
+  $('#x').onclick=()=>$('#dlg').close();
+  if(b){
+    let txt=null; const get=async()=>txt??(txt=await (await fetch(b.doc)).text());
+    $('#cp').onclick=async()=>{const x=await get();try{await navigator.clipboard.writeText(x);toast(t('copied'))}catch(e){const p=$('#doc');p.hidden=false;p.textContent=x;const r=document.createRange();r.selectNodeContents(p);const sel=getSelection();sel.removeAllRanges();sel.addRange(r);toast(t('copyfail'))}};
+    $('#vw').onclick=async()=>{const p=$('#doc');if(p.hidden){p.textContent=await get();p.hidden=false;$('#vw').textContent=t('hide')}else{p.hidden=true;$('#vw').textContent=t('view')}};
+  }
+  $('#dlg').showModal();
+  try{history.replaceState(null,'','#'+id)}catch(e){}
+}
+function toast(m){const e=$('#toast');e.textContent=m;e.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>e.hidden=true,2400)}
+$('#grid').addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openCard(c.dataset.id)});
+$('#fam').addEventListener('click',e=>{const b=e.target.closest('[data-f]');if(b){famSel=b.dataset.f;render()}});
+$('#stat').addEventListener('click',e=>{const b=e.target.closest('[data-s]');if(b){statSel=b.dataset.s;render()}});
+$('#q').addEventListener('input',e=>{q=e.target.value.trim().toLowerCase();render()});
+$('#lang').onclick=()=>{L=L==='vi'?'en':'vi';try{localStorage.setItem('lang',L)}catch(e){};applyLang()};
+$('#theme').onclick=()=>{const r=document.documentElement,cur=r.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');r.dataset.theme=cur==='dark'?'light':'dark'};
+$('#dlg').addEventListener('close',()=>{$('#dc').innerHTML='';try{history.replaceState(null,'',location.pathname)}catch(e){}});
+fetch('data.json').then(r=>r.json()).then(d=>{D=d;applyLang();const h=location.hash.slice(1);if(h&&D.some(s=>s.id===h))openCard(h)}).catch(()=>{$('#grid').innerHTML='<p class="empty">data.json</p>'});
+</script>
+</body></html>
+
