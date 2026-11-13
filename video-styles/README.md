@@ -31,6 +31,12 @@ Or use the live page (GitHub Pages) linked in the repository sidebar.
 - The recipe documents are written from trial builds. Tool names inside them (`agy` image helper, `motion_tools.py`, VieNeu voice) are private helpers of the author's setup and are not included; treat those sections as a description of what was done.
 - Fit scores are Jev (TypeSafe) probabilities for "this style is a strong fit for a 45-60 s explainer on this topic". They are a guide, not a rule.
 
+## Get AgentKit
+
+The styles come from the AgentKit motion-video skill. **Affiliate disclosure:** the link below is the author's referral link; buying through it gives you 20% off your first purchase (per the AgentKit referral programme) and the author earns a commission. The gallery itself is free and Apache-2.0.
+
+https://agentkit.best/?ref=JGRILPGH
+
 ## Credits and licence
 
 Apache-2.0 (see `LICENSE`). Style profiles come from AgentKit motion-video (MIT); see `NOTICE`. Page layout inspired by video-shotcraft (Apache-2.0).
