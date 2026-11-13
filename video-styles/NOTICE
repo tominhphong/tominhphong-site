@@ -1,0 +1,10 @@
+﻿Video Style Gallery
+Copyright 2026 Phong To
+
+This gallery describes and samples styles from the AgentKit "motion-video" skill
+(https://github.com/bestagentkits/motion-video-skill, MIT licence, vendored at version 1.6.0).
+The 70 style profiles (names, summaries, best-for lists) come from that skill; the style documents and the
+10-second samples are original trial builds made with it (HyperFrames, HTML + GSAP).
+
+The layout of the gallery page is inspired by https://github.com/Vincentwei1021/video-shotcraft (Apache-2.0).
+No code or assets were copied from that project.
