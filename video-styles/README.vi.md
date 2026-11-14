@@ -2,9 +2,9 @@
 
 [English](README.md) | **Tiếng Việt**
 
-![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Styles built](https://img.shields.io/badge/styles%20built-31%2F70-0b6e5c) ![HyperFrames](https://img.shields.io/badge/built%20with-HyperFrames-black) ![AgentKit](https://img.shields.io/badge/styles%20from-AgentKit%20motion--video-orange)
+![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Styles built](https://img.shields.io/badge/styles%20built-32%2F70-0b6e5c) ![HyperFrames](https://img.shields.io/badge/built%20with-HyperFrames-black) ![AgentKit](https://img.shields.io/badge/styles%20from-AgentKit%20motion--video-orange)
 
-<p align="center"><img src="assets/banner.jpg" alt="Samples from 31 built styles" width="100%"></p>
+<p align="center"><img src="assets/banner.jpg" alt="Samples from 32 built styles" width="100%"></p>
 <p align="center"><img src="assets/gif-art-deco.gif" width="170"> <img src="assets/gif-pixel.gif" width="170"> <img src="assets/gif-manga.gif" width="170"></p>
 
 ▶ **[Xem cả 70 phong cách trong Thư viện](https://tominhphong.github.io/video-style-gallery/)** · 🌐 **[tominhphong.com/video-styles](https://tominhphong.com/video-styles)**
@@ -29,7 +29,7 @@ danh sách chủ đề (176)  ->  Jev chấm từng phong cách x chủ đề  -
 
 ## Có gì mới
 
-- **13/11/2026** 31 trên 70 phong cách đã dựng (đợt 1-4; đợt 3-4 chỉ video demo 12 giây, không voiceover), có đoạn mẫu và tài liệu công thức.
+- **13/11/2026** 32 trên 70 phong cách đã dựng (đợt 1-4; đợt 3-4 chỉ video demo 12 giây, không voiceover), có đoạn mẫu và tài liệu công thức.
 - **11/11/2026** Đăng trang thư viện, danh sách chủ đề và điểm Jev.
 
 ## Cách dùng
@@ -40,7 +40,7 @@ danh sách chủ đề (176)  ->  Jev chấm từng phong cách x chủ đề  -
 | "Chọn phong cách cho tin ra mắt sản phẩm." | Xem điểm hợp trong Thư viện: mỗi thẻ ghi 3 chủ đề hợp nhất |
 | "Chép công thức của `soft-clay-3d`." | Nút **Chép công thức** trong Thư viện chép tài liệu |
 
-## Các phong cách đã dựng (31 trên 70)
+## Các phong cách đã dựng (32 trên 70)
 
 | Xem trước | Phong cách | Nhóm | Chủ đề hợp nhất | Jev |
 |---|---|---|---|---|
@@ -54,6 +54,7 @@ danh sách chủ đề (176)  ->  Jev chấm từng phong cách x chủ đề  -
 | <a href="https://tominhphong.github.io/video-style-gallery/#creative-canvas"><img src="p/creative-canvas-sample-t142.jpg" width="90" alt="creative-canvas"></a> | [`creative-canvas`](docs/creative-canvas.md) | Lấy cảm hứng thương hiệu | Architects and clients review a floor plan together on a shared online board | 0.82 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#creative-suite"><img src="p/creative-suite-sample-t088.jpg" width="90" alt="creative-suite"></a> | [`creative-suite`](docs/creative-suite.md) | Lấy cảm hứng thương hiệu | Photo editing app releases AI masking and before-and-after tools | 0.86 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#data-editorial"><img src="p/data-editorial-sample-t059.jpg" width="90" alt="data-editorial"></a> | [`data-editorial`](docs/data-editorial.md) | Thẩm mỹ | Monthly housing report: inventory, median price, days on market in Austin | 0.85 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#developer-workflow"><img src="p/developer-workflow-sample-t028.jpg" width="90" alt="developer-workflow"></a> | [`developer-workflow`](docs/developer-workflow.md) | Lấy cảm hứng thương hiệu | GitHub repository gains ten thousand stars in a week: what it does | 0.82 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#documentary-purpose"><img src="p/documentary-purpose-sample-t149.jpg" width="90" alt="documentary-purpose"></a> | [`documentary-purpose`](docs/documentary-purpose.md) | Lấy cảm hứng thương hiệu | Nature reserve outside Austin restores prairie and tells the founder's story | 0.87 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#expressive-material"><img src="p/expressive-material-sample-t118.jpg" width="90" alt="expressive-material"></a> | [`expressive-material`](docs/expressive-material.md) | Lấy cảm hứng thương hiệu | Phone operating system update personalises colours and widgets | 0.84 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#friendly-system-motion"><img src="p/friendly-system-motion-sample-t108.jpg" width="90" alt="friendly-system-motion"></a> | [`friendly-system-motion`](docs/friendly-system-motion.md) | Lấy cảm hứng thương hiệu | Habit-tracking app adds streaks and a mascot to help people save money | 0.85 |
@@ -76,7 +77,7 @@ danh sách chủ đề (176)  ->  Jev chấm từng phong cách x chủ đề  -
 | <a href="https://tominhphong.github.io/video-style-gallery/#sport-editorial"><img src="p/sport-editorial-sample-t084.jpg" width="90" alt="sport-editorial"></a> | [`sport-editorial`](docs/sport-editorial.md) | Lấy cảm hứng thương hiệu | A fashion brand launches a limited sneaker drop | 0.82 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#terminal-ops"><img src="p/terminal-ops-sample-t027.jpg" width="90" alt="terminal-ops"></a> | [`terminal-ops`](docs/terminal-ops.md) | Thẩm mỹ | Command line tool that turns a README into a deployment | 0.81 |
 
-**Chưa dựng (39):** `athletic-impact`, `bauhaus-geometry`, `calm-workspace`, `cinematic-product-launch`, `cinematic-streaming`, `community-chaos`, `constructivist-poster`, `developer-workflow`, `editorial-collage-explainer`, `editorial-intelligence`, `extreme-energy`, `fluent-productivity`, `gradient-fintech`, `holographic-hud`, `human-storytelling`, `immersive-console`, `ink-woodblock`, `joyful-pop`, `keynote-stage`, `kinetic-typography`, `mid-century-retro`, `minimal-future-product`, `mission-control`, `monochrome-developer`, `monochrome-luxury`, `neo-brutalist-web`, `newsprint-editorial`, `paper-cut-collage`, `playful-game-system`, `precision-dark-product`, `premium-ui-demo`, `quirky-editorial`, `saas-bento`, `sensory-tech`, `swiss-kinetic-editorial`, `systematic-enterprise`, `vaporwave-memphis`, `wpa-screenprint`, `y2k-liquid-chrome`.
+**Chưa dựng (38):** `athletic-impact`, `bauhaus-geometry`, `calm-workspace`, `cinematic-product-launch`, `cinematic-streaming`, `community-chaos`, `constructivist-poster`, `editorial-collage-explainer`, `editorial-intelligence`, `extreme-energy`, `fluent-productivity`, `gradient-fintech`, `holographic-hud`, `human-storytelling`, `immersive-console`, `ink-woodblock`, `joyful-pop`, `keynote-stage`, `kinetic-typography`, `mid-century-retro`, `minimal-future-product`, `mission-control`, `monochrome-developer`, `monochrome-luxury`, `neo-brutalist-web`, `newsprint-editorial`, `paper-cut-collage`, `playful-game-system`, `precision-dark-product`, `premium-ui-demo`, `quirky-editorial`, `saas-bento`, `sensory-tech`, `swiss-kinetic-editorial`, `systematic-enterprise`, `vaporwave-memphis`, `wpa-screenprint`, `y2k-liquid-chrome`.
 
 ## Lấy AgentKit
 
