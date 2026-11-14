@@ -2,9 +2,9 @@
 
 **English** | [Tiếng Việt](README.vi.md)
 
-![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Styles built](https://img.shields.io/badge/styles%20built-31%2F70-0b6e5c) ![HyperFrames](https://img.shields.io/badge/built%20with-HyperFrames-black) ![AgentKit](https://img.shields.io/badge/styles%20from-AgentKit%20motion--video-orange)
+![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Styles built](https://img.shields.io/badge/styles%20built-32%2F70-0b6e5c) ![HyperFrames](https://img.shields.io/badge/built%20with-HyperFrames-black) ![AgentKit](https://img.shields.io/badge/styles%20from-AgentKit%20motion--video-orange)
 
-<p align="center"><img src="assets/banner.jpg" alt="Samples from 31 built styles" width="100%"></p>
+<p align="center"><img src="assets/banner.jpg" alt="Samples from 32 built styles" width="100%"></p>
 <p align="center"><img src="assets/gif-art-deco.gif" width="170"> <img src="assets/gif-pixel.gif" width="170"> <img src="assets/gif-manga.gif" width="170"></p>
 
 ▶ **[Browse all 70 styles in the Gallery](https://tominhphong.github.io/video-style-gallery/)** · 🌐 **[tominhphong.com/video-styles](https://tominhphong.com/video-styles)**
@@ -29,7 +29,7 @@ topic list (176)  ->  Jev scores each style x topic  ->  top 3 topics per style
 
 ## What's new
 
-- **2026-11-13** 31 of 70 styles built (waves 1-4, waves 3-4 demo-only, silent 12 s). Samples and recipe documents for all 31.
+- **2026-11-13** 32 of 70 styles built (waves 1-4, waves 3-4 demo-only, silent 12 s). Samples and recipe documents for all 32.
 - **2026-11-11** Gallery page, topic list and Jev scores published.
 
 ## Use
@@ -40,7 +40,7 @@ topic list (176)  ->  Jev scores each style x topic  ->  top 3 topics per style
 | "Pick a style for a product-launch story." | Use the fit scores in the Gallery: each card lists its top 3 topics |
 | "Copy the recipe for `soft-clay-3d`." | The Gallery's **Copy recipe** button copies the document |
 
-## Built styles (31 of 70)
+## Built styles (32 of 70)
 
 | Preview | Style | Family | Best-fit topic | Jev |
 |---|---|---|---|---|
@@ -54,6 +54,7 @@ topic list (176)  ->  Jev scores each style x topic  ->  top 3 topics per style
 | <a href="https://tominhphong.github.io/video-style-gallery/#creative-canvas"><img src="p/creative-canvas-sample-t142.jpg" width="90" alt="creative-canvas"></a> | [`creative-canvas`](docs/creative-canvas.md) | Brand-inspired | Architects and clients review a floor plan together on a shared online board | 0.82 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#creative-suite"><img src="p/creative-suite-sample-t088.jpg" width="90" alt="creative-suite"></a> | [`creative-suite`](docs/creative-suite.md) | Brand-inspired | Photo editing app releases AI masking and before-and-after tools | 0.86 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#data-editorial"><img src="p/data-editorial-sample-t059.jpg" width="90" alt="data-editorial"></a> | [`data-editorial`](docs/data-editorial.md) | Aesthetic | Monthly housing report: inventory, median price, days on market in Austin | 0.85 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#developer-workflow"><img src="p/developer-workflow-sample-t028.jpg" width="90" alt="developer-workflow"></a> | [`developer-workflow`](docs/developer-workflow.md) | Brand-inspired | GitHub repository gains ten thousand stars in a week: what it does | 0.82 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#documentary-purpose"><img src="p/documentary-purpose-sample-t149.jpg" width="90" alt="documentary-purpose"></a> | [`documentary-purpose`](docs/documentary-purpose.md) | Brand-inspired | Nature reserve outside Austin restores prairie and tells the founder's story | 0.87 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#expressive-material"><img src="p/expressive-material-sample-t118.jpg" width="90" alt="expressive-material"></a> | [`expressive-material`](docs/expressive-material.md) | Brand-inspired | Phone operating system update personalises colours and widgets | 0.84 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#friendly-system-motion"><img src="p/friendly-system-motion-sample-t108.jpg" width="90" alt="friendly-system-motion"></a> | [`friendly-system-motion`](docs/friendly-system-motion.md) | Brand-inspired | Habit-tracking app adds streaks and a mascot to help people save money | 0.85 |
@@ -76,7 +77,7 @@ topic list (176)  ->  Jev scores each style x topic  ->  top 3 topics per style
 | <a href="https://tominhphong.github.io/video-style-gallery/#sport-editorial"><img src="p/sport-editorial-sample-t084.jpg" width="90" alt="sport-editorial"></a> | [`sport-editorial`](docs/sport-editorial.md) | Brand-inspired | A fashion brand launches a limited sneaker drop | 0.82 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#terminal-ops"><img src="p/terminal-ops-sample-t027.jpg" width="90" alt="terminal-ops"></a> | [`terminal-ops`](docs/terminal-ops.md) | Aesthetic | Command line tool that turns a README into a deployment | 0.81 |
 
-**Not built yet (39):** `athletic-impact`, `bauhaus-geometry`, `calm-workspace`, `cinematic-product-launch`, `cinematic-streaming`, `community-chaos`, `constructivist-poster`, `developer-workflow`, `editorial-collage-explainer`, `editorial-intelligence`, `extreme-energy`, `fluent-productivity`, `gradient-fintech`, `holographic-hud`, `human-storytelling`, `immersive-console`, `ink-woodblock`, `joyful-pop`, `keynote-stage`, `kinetic-typography`, `mid-century-retro`, `minimal-future-product`, `mission-control`, `monochrome-developer`, `monochrome-luxury`, `neo-brutalist-web`, `newsprint-editorial`, `paper-cut-collage`, `playful-game-system`, `precision-dark-product`, `premium-ui-demo`, `quirky-editorial`, `saas-bento`, `sensory-tech`, `swiss-kinetic-editorial`, `systematic-enterprise`, `vaporwave-memphis`, `wpa-screenprint`, `y2k-liquid-chrome`.
+**Not built yet (38):** `athletic-impact`, `bauhaus-geometry`, `calm-workspace`, `cinematic-product-launch`, `cinematic-streaming`, `community-chaos`, `constructivist-poster`, `editorial-collage-explainer`, `editorial-intelligence`, `extreme-energy`, `fluent-productivity`, `gradient-fintech`, `holographic-hud`, `human-storytelling`, `immersive-console`, `ink-woodblock`, `joyful-pop`, `keynote-stage`, `kinetic-typography`, `mid-century-retro`, `minimal-future-product`, `mission-control`, `monochrome-developer`, `monochrome-luxury`, `neo-brutalist-web`, `newsprint-editorial`, `paper-cut-collage`, `playful-game-system`, `precision-dark-product`, `premium-ui-demo`, `quirky-editorial`, `saas-bento`, `sensory-tech`, `swiss-kinetic-editorial`, `systematic-enterprise`, `vaporwave-memphis`, `wpa-screenprint`, `y2k-liquid-chrome`.
 
 ## Get AgentKit
 
