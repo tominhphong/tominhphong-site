@@ -4,7 +4,7 @@
 
 ![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Styles built](https://img.shields.io/badge/styles%20built-22%2F70-0b6e5c) ![HyperFrames](https://img.shields.io/badge/built%20with-HyperFrames-black) ![AgentKit](https://img.shields.io/badge/styles%20from-AgentKit%20motion--video-orange)
 
-<p align="center"><img src="assets/banner.jpg" alt="Samples from 17 of the built styles" width="100%"></p>
+<p align="center"><img src="assets/banner.jpg" alt="Samples from 22 built styles" width="100%"></p>
 <p align="center"><img src="assets/gif-art-deco.gif" width="170"> <img src="assets/gif-pixel.gif" width="170"> <img src="assets/gif-manga.gif" width="170"></p>
 
 ▶ **[Browse all 70 styles in the Gallery](https://tominhphong.github.io/video-style-gallery/)** · 🌐 **[tominhphong.com/video-styles](https://tominhphong.com/video-styles)**
