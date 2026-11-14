@@ -1,4 +1,4 @@
-﻿# Style: retro-crt-broadcast (9:16 Vietnamese news edition, written from the first real build)
+# Style: retro-crt-broadcast (9:16 Vietnamese news edition, written from the first real build)
 
 ## 0. Read this first: niche, reading order, status
 
@@ -99,7 +99,7 @@ Black teletext box `rgba(0,0,0,.94)` (DEVIATION), no radius, 6 px amber left rul
 
 ## 10. Sound
 
-No music (the pipeline has none). The voice is the only sound: VieNeu via `motion_tools.py voice`, `--gap 0.3` between scenes. Measured on `final.mp4`: -15.5 LUFS, peak -4.2 dBFS (mux does loudnorm I=-14, TP=-1.5; two-pass not used). Profile sound (dial click + static on cuts, tube whine on power-off) is NOT available here; if a SFX set exists, put it on the 0.2 s static bursts and on the 0.12 s power-off. Words flagged for a native listener (listed in `ear-check.txt`): "New York", "Dolby", "Los Angeles" (not in the trusted dictionary).
+No music (the pipeline has none). The voice is the only sound: VieNeu via `motion_tools.py voice`, `--gap 0.3` between scenes. Measured on `final.mp4`: -15.5 LUFS, peak -4.2 dBFS (mux does loudnorm I=-14, TP=-1.5; two-pass not used). Profile sound (dial click + static on cuts, tube whine on power-off) is NOT available here; if a SFX set exists, put it on the 0.2 s static bursts and on the 0.12 s power-off. Words that went to Phong's ear (listed in `ear-check.txt`): "New York", "Dolby", "Los Angeles" (not in the trusted dictionary).
 
 ## 11. Images (agy)
 
@@ -134,4 +134,3 @@ No music (the pipeline has none). The voice is the only sound: VieNeu via `motio
 - Build one real teletext "page" per scene with a header bar so the recipe is recognisable; scenes 2, 4 and 5 did, scenes 1, 3 and 6 are closer to a generic card layout.
 - Add a proper SFX set for static and power-off when the pipeline has it.
 - Pick a pixel face if one is installed (VT323) and re-measure the character widths in trap 6.
-
