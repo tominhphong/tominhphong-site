@@ -2,9 +2,9 @@
 
 [English](README.md) | **Tiếng Việt**
 
-![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Styles built](https://img.shields.io/badge/styles%20built-52%2F70-0b6e5c) ![HyperFrames](https://img.shields.io/badge/built%20with-HyperFrames-black) ![AgentKit](https://img.shields.io/badge/styles%20from-AgentKit%20motion--video-orange)
+![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Styles built](https://img.shields.io/badge/styles%20built-62%2F70-0b6e5c) ![HyperFrames](https://img.shields.io/badge/built%20with-HyperFrames-black) ![AgentKit](https://img.shields.io/badge/styles%20from-AgentKit%20motion--video-orange)
 
-<p align="center"><img src="assets/banner.jpg" alt="Samples from 52 built styles" width="100%"></p>
+<p align="center"><img src="assets/banner.jpg" alt="Samples from 62 built styles" width="100%"></p>
 <p align="center"><img src="assets/gif-art-deco.gif" width="170"> <img src="assets/gif-pixel.gif" width="170"> <img src="assets/gif-manga.gif" width="170"></p>
 
 ▶ **[Xem cả 70 phong cách trong Thư viện](https://tominhphong.github.io/video-style-gallery/)** · 🌐 **[tominhphong.com/video-styles](https://tominhphong.com/video-styles)**
@@ -29,7 +29,7 @@ danh sách chủ đề (176)  ->  Jev chấm từng phong cách x chủ đề  -
 
 ## Có gì mới
 
-- **13/11/2026** 52 trên 70 phong cách đã dựng (đợt 1-6; đợt 3-6 chỉ video demo 12 giây, không voiceover), có đoạn mẫu và tài liệu công thức.
+- **13/11/2026** 62 trên 70 phong cách đã dựng (đợt 1-7; đợt 3-7 chỉ video demo 12 giây, không voiceover), có đoạn mẫu và tài liệu công thức.
 - **11/11/2026** Đăng trang thư viện, danh sách chủ đề và điểm Jev.
 
 ## Cách dùng
@@ -40,16 +40,18 @@ danh sách chủ đề (176)  ->  Jev chấm từng phong cách x chủ đề  -
 | "Chọn phong cách cho tin ra mắt sản phẩm." | Xem điểm hợp trong Thư viện: mỗi thẻ ghi 3 chủ đề hợp nhất |
 | "Chép công thức của `soft-clay-3d`." | Nút **Chép công thức** trong Thư viện chép tài liệu |
 
-## Các phong cách đã dựng (52 trên 70)
+## Các phong cách đã dựng (62 trên 70)
 
 | Xem trước | Phong cách | Nhóm | Chủ đề hợp nhất | Jev |
 |---|---|---|---|---|
 | <a href="https://tominhphong.github.io/video-style-gallery/#accelerated-compute"><img src="p/accelerated-compute-sample-t027.jpg" width="90" alt="accelerated-compute"></a> | [`accelerated-compute`](docs/accelerated-compute.md) | Lấy cảm hứng thương hiệu | Chip maker unveils a GPU with benchmark charts against last year's model | 0.89 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#ambient-intelligence"><img src="p/ambient-intelligence-sample-t030.jpg" width="90" alt="ambient-intelligence"></a> | [`ambient-intelligence`](docs/ambient-intelligence.md) | Lấy cảm hứng thương hiệu | How a large language model uses a context window | 0.72 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#art-deco-luxury"><img src="p/art-deco-luxury-sample-t103.jpg" width="90" alt="art-deco-luxury"></a> | [`art-deco-luxury`](docs/art-deco-luxury.md) | Thẩm mỹ | Perfume house relaunches a 1920s classic fragrance | 0.89 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#bauhaus-geometry"><img src="p/bauhaus-geometry-sample-t169.jpg" width="90" alt="bauhaus-geometry"></a> | [`bauhaus-geometry`](docs/bauhaus-geometry.md) | Thẩm mỹ | Low-code platform lets teams snap together apps from reusable blocks | 0.71 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#blueprint-engineering"><img src="p/blueprint-engineering-sample-t132.jpg" width="90" alt="blueprint-engineering"></a> | [`blueprint-engineering`](docs/blueprint-engineering.md) | Thẩm mỹ | Smartphone maker shows an exploded view of its new camera module | 0.78 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#character-comedy"><img src="p/character-comedy-sample-t108.jpg" width="90" alt="character-comedy"></a> | [`character-comedy`](docs/character-comedy.md) | Lấy cảm hứng thương hiệu | Habit-tracking app adds streaks and a mascot to help people save money | 0.83 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#cinematic-product-launch"><img src="p/cinematic-product-launch-sample-t111.jpg" width="90" alt="cinematic-product-launch"></a> | [`cinematic-product-launch`](docs/cinematic-product-launch.md) | Lấy cảm hứng thương hiệu | Camera maker launches a cinema lens with anamorphic look | 0.75 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#cinematic-streaming"><img src="p/cinematic-streaming-sample-t109.jpg" width="90" alt="cinematic-streaming"></a> | [`cinematic-streaming`](docs/cinematic-streaming.md) | Lấy cảm hứng thương hiệu | Streaming platform announces a new crime series with a teaser date | 0.73 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#cinematic-technology"><img src="p/cinematic-technology-sample-t111.jpg" width="90" alt="cinematic-technology"></a> | [`cinematic-technology`](docs/cinematic-technology.md) | Lấy cảm hứng thương hiệu | Camera maker launches a cinema lens with anamorphic look | 0.89 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#comic-multiverse"><img src="p/comic-multiverse-sample-t164.jpg" width="90" alt="comic-multiverse"></a> | [`comic-multiverse`](docs/comic-multiverse.md) | Của nhà | Youth sneaker and streetwear brand announces an anime collaboration | 0.79 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#creative-canvas"><img src="p/creative-canvas-sample-t142.jpg" width="90" alt="creative-canvas"></a> | [`creative-canvas`](docs/creative-canvas.md) | Lấy cảm hứng thương hiệu | Architects and clients review a floor plan together on a shared online board | 0.82 |
@@ -60,6 +62,8 @@ danh sách chủ đề (176)  ->  Jev chấm từng phong cách x chủ đề  -
 | <a href="https://tominhphong.github.io/video-style-gallery/#editorial-collage-explainer"><img src="p/editorial-collage-explainer-sample-t175.jpg" width="90" alt="editorial-collage-explainer"></a> | [`editorial-collage-explainer`](docs/editorial-collage-explainer.md) | Lấy cảm hứng thương hiệu | Tenant union zine explains your rights in plain language | 0.78 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#editorial-intelligence"><img src="p/editorial-intelligence-sample-t079.jpg" width="90" alt="editorial-intelligence"></a> | [`editorial-intelligence`](docs/editorial-intelligence.md) | Lấy cảm hứng thương hiệu | Sleep and screens: what the research actually says | 0.76 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#expressive-material"><img src="p/expressive-material-sample-t118.jpg" width="90" alt="expressive-material"></a> | [`expressive-material`](docs/expressive-material.md) | Lấy cảm hứng thương hiệu | Phone operating system update personalises colours and widgets | 0.84 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#extreme-energy"><img src="p/extreme-energy-sample-t153.jpg" width="90" alt="extreme-energy"></a> | [`extreme-energy`](docs/extreme-energy.md) | Lấy cảm hứng thương hiệu | Extreme sports festival comes to Austin: skate, BMX and wakeboard | 0.66 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#fluent-productivity"><img src="p/fluent-productivity-sample-t034.jpg" width="90" alt="fluent-productivity"></a> | [`fluent-productivity`](docs/fluent-productivity.md) | Lấy cảm hứng thương hiệu | Pricing change: an AI assistant adds a cheaper plan | 0.72 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#friendly-system-motion"><img src="p/friendly-system-motion-sample-t108.jpg" width="90" alt="friendly-system-motion"></a> | [`friendly-system-motion`](docs/friendly-system-motion.md) | Lấy cảm hứng thương hiệu | Habit-tracking app adds streaks and a mascot to help people save money | 0.85 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#functional-playful"><img src="p/functional-playful-sample-t169.jpg" width="90" alt="functional-playful"></a> | [`functional-playful`](docs/functional-playful.md) | Lấy cảm hứng thương hiệu | How to assemble a flat-pack bookshelf in four steps | 0.88 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#glass-keynote"><img src="p/glass-keynote-sample-t025.jpg" width="90" alt="glass-keynote"></a> | [`glass-keynote`](docs/glass-keynote.md) | Của nhà | Phone operating system update personalises colours and widgets | 0.85 |
@@ -70,13 +74,18 @@ danh sách chủ đề (176)  ->  Jev chấm từng phong cách x chủ đề  -
 | <a href="https://tominhphong.github.io/video-style-gallery/#ink-woodblock"><img src="p/ink-woodblock-sample-t122.jpg" width="90" alt="ink-woodblock"></a> | [`ink-woodblock`](docs/ink-woodblock.md) | Thẩm mỹ | History of the Mekong delta rice trade told with ink illustrations | 0.74 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#isometric-systems"><img src="p/isometric-systems-sample-t169.jpg" width="90" alt="isometric-systems"></a> | [`isometric-systems`](docs/isometric-systems.md) | Thẩm mỹ | Low-code platform lets teams snap together apps from reusable blocks | 0.82 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#joyful-pop"><img src="p/joyful-pop-sample-t090.jpg" width="90" alt="joyful-pop"></a> | [`joyful-pop`](docs/joyful-pop.md) | Lấy cảm hứng thương hiệu | A bold ad campaign for a sparkling water brand | 0.80 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#keynote-stage"><img src="p/keynote-stage-sample-t001.jpg" width="90" alt="keynote-stage"></a> | [`keynote-stage`](docs/keynote-stage.md) | Lấy cảm hứng thương hiệu | Mortgage rates fall below 6 percent for the first time this year | 0.73 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#manga-ink"><img src="p/manga-ink-sample-t123.jpg" width="90" alt="manga-ink"></a> | [`manga-ink`](docs/manga-ink.md) | Thẩm mỹ | Youth sneaker and streetwear brand announces an anime collaboration | 0.83 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#mid-century-retro"><img src="p/mid-century-retro-sample-t125.jpg" width="90" alt="mid-century-retro"></a> | [`mid-century-retro`](docs/mid-century-retro.md) | Thẩm mỹ | Toy company releases a build-it-yourself robot kit for kids | 0.82 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#minimal-future-product"><img src="p/minimal-future-product-sample-t124.jpg" width="90" alt="minimal-future-product"></a> | [`minimal-future-product`](docs/minimal-future-product.md) | Lấy cảm hứng thương hiệu | Electric car maker unveils a futurist concept with range and charge specs | 0.73 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#mission-control"><img src="p/mission-control-sample-t072.jpg" width="90" alt="mission-control"></a> | [`mission-control`](docs/mission-control.md) | Lấy cảm hứng thương hiệu | Space telescope releases a new deep-field image | 0.76 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#modular-build"><img src="p/modular-build-sample-t125.jpg" width="90" alt="modular-build"></a> | [`modular-build`](docs/modular-build.md) | Lấy cảm hứng thương hiệu | Toy company releases a build-it-yourself robot kit for kids | 0.83 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#monochrome-developer"><img src="p/monochrome-developer-sample-t029.jpg" width="90" alt="monochrome-developer"></a> | [`monochrome-developer`](docs/monochrome-developer.md) | Lấy cảm hứng thương hiệu | Command line tool that turns a README into a deployment | 0.77 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#monochrome-luxury"><img src="p/monochrome-luxury-sample-t126.jpg" width="90" alt="monochrome-luxury"></a> | [`monochrome-luxury`](docs/monochrome-luxury.md) | Thẩm mỹ | Fashion house lookbook for the new season goes live | 0.69 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#music-editorial"><img src="p/music-editorial-sample-t127.jpg" width="90" alt="music-editorial"></a> | [`music-editorial`](docs/music-editorial.md) | Lấy cảm hứng thương hiệu | Year in review: most streamed songs and artists in Texas | 0.81 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#neo-brutalist-web"><img src="p/neo-brutalist-web-sample-t133.jpg" width="90" alt="neo-brutalist-web"></a> | [`neo-brutalist-web`](docs/neo-brutalist-web.md) | Thẩm mỹ | Underground zine fair in Austin: bands, printers and tickets | 0.73 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#neon-cyberpunk"><img src="p/neon-cyberpunk-sample-t136.jpg" width="90" alt="neon-cyberpunk"></a> | [`neon-cyberpunk`](docs/neon-cyberpunk.md) | Thẩm mỹ | Synthwave album release with a neon visual concept | 0.81 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#newsprint-editorial"><img src="p/newsprint-editorial-sample-t138.jpg" width="90" alt="newsprint-editorial"></a> | [`newsprint-editorial`](docs/newsprint-editorial.md) | Thẩm mỹ | A century of the Texas oil industry: boom, bust and the workers | 0.72 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#organic-biomorphic"><img src="p/organic-biomorphic-sample-t117.jpg" width="90" alt="organic-biomorphic"></a> | [`organic-biomorphic`](docs/organic-biomorphic.md) | Thẩm mỹ | Wellness app launches a guided breathing programme | 0.88 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#paper-cut-collage"><img src="p/paper-cut-collage-sample-t133.jpg" width="90" alt="paper-cut-collage"></a> | [`paper-cut-collage`](docs/paper-cut-collage.md) | Thẩm mỹ | Underground zine fair in Austin: bands, printers and tickets | 0.79 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#pixel-arcade"><img src="p/pixel-arcade-sample-t129.jpg" width="90" alt="pixel-arcade"></a> | [`pixel-arcade`](docs/pixel-arcade.md) | Thẩm mỹ | Retro console returns as a mini edition with fifty games | 0.76 |
@@ -95,9 +104,10 @@ danh sách chủ đề (176)  ->  Jev chấm từng phong cách x chủ đề  -
 | <a href="https://tominhphong.github.io/video-style-gallery/#swiss-kinetic-editorial"><img src="p/swiss-kinetic-editorial-sample-t141.jpg" width="90" alt="swiss-kinetic-editorial"></a> | [`swiss-kinetic-editorial`](docs/swiss-kinetic-editorial.md) | Thẩm mỹ | Industrial policy announcement: new factory subsidies explained | 0.73 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#systematic-enterprise"><img src="p/systematic-enterprise-sample-t026.jpg" width="90" alt="systematic-enterprise"></a> | [`systematic-enterprise`](docs/systematic-enterprise.md) | Lấy cảm hứng thương hiệu | AI company reports quarterly revenue, margin and backlog | 0.80 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#terminal-ops"><img src="p/terminal-ops-sample-t027.jpg" width="90" alt="terminal-ops"></a> | [`terminal-ops`](docs/terminal-ops.md) | Thẩm mỹ | Command line tool that turns a README into a deployment | 0.81 |
+| <a href="https://tominhphong.github.io/video-style-gallery/#wpa-screenprint"><img src="p/wpa-screenprint-sample-t080.jpg" width="90" alt="wpa-screenprint"></a> | [`wpa-screenprint`](docs/wpa-screenprint.md) | Thẩm mỹ | Museum exhibit on ancient maps opens this month | 0.67 |
 | <a href="https://tominhphong.github.io/video-style-gallery/#y2k-liquid-chrome"><img src="p/y2k-liquid-chrome-sample-t084.jpg" width="90" alt="y2k-liquid-chrome"></a> | [`y2k-liquid-chrome`](docs/y2k-liquid-chrome.md) | Thẩm mỹ | A fashion brand launches a limited sneaker drop | 0.76 |
 
-**Chưa dựng (18):** `athletic-impact`, `bauhaus-geometry`, `calm-workspace`, `cinematic-streaming`, `community-chaos`, `constructivist-poster`, `extreme-energy`, `fluent-productivity`, `gradient-fintech`, `keynote-stage`, `kinetic-typography`, `minimal-future-product`, `monochrome-luxury`, `neo-brutalist-web`, `newsprint-editorial`, `quirky-editorial`, `vaporwave-memphis`, `wpa-screenprint`.
+**Chưa dựng (8):** `athletic-impact`, `calm-workspace`, `community-chaos`, `constructivist-poster`, `gradient-fintech`, `kinetic-typography`, `quirky-editorial`, `vaporwave-memphis`.
 
 ## Lấy AgentKit
 
